@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Night Shield Spell</title>
+  <style>
+    body {
+      background: linear-gradient(135deg, #1b0034, #4b006e, #120052);
+      color: white;
+      font-family: "Comic Sans MS", "Segoe UI", sans-serif;
+      text-align: center;
+      padding-top: 100px;
+    }
+    h1 {
+      font-size: 2.5rem;
+      margin-bottom: 50px;
+    }
+    button {
+      background: #ffccff;
+      border: none;
+      padding: 15px 30px;
+      font-size: 1.5rem;
+      border-radius: 30px;
+      cursor: pointer;
+      box-shadow: 0 0 20px #ff99ff;
+      transition: 0.3s;
+    }
+    button:hover {
+      background: #ff99ff;
+      box-shadow: 0 0 40px #ff66ff;
+    }
+    #message {
+      margin-top: 40px;
+      font-size: 2rem;
+      display: none;
+      animation: glow 2s infinite alternate;
+    }
+    @keyframes glow {
+      from { text-shadow: 0 0 10px #ff99ff, 0 0 20px #ff66ff; }
+      to   { text-shadow: 0 0 20px #ffccff, 0 0 40px #ff99ff; }
+    }
+  </style>
+</head>
+<body>
+  <h1>🌙 Click to Activate Your Night Shield ✨</h1>
+  <button onclick="activateShield()">Activate</button>
+  <div id="message">🛡️ ✨🔮 By moonlight and stars so bright,  
+i wrap lord caffeina in a bubble of light.  
+Safe from worry, safe from fright,  
+Dreams be sweet all through the night. 🌙 ✨💫</div>
+
+  <script>
+    function activateShield() {
+      document.querySelector("button").style.display = "none";
+      document.getElementById("message").style.display = "block";
+    }
+  </script>
+</body>
+</html>
